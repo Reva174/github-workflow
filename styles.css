@@ -1,0 +1,129 @@
+/*Write clean CSS to style the Rock Paper Scissors game with:
+- A dark background for the body with centered alignment
+- A container with rounded corners, padding, and a subtle shadow
+- Heading with a bright accent color
+- Scoreboard with player and computer boxes, using a contrasting background, rounded corners, and clear score text
+- Rock, Paper, Scissors buttons styled with rounded corners, dark background, hover effect, and adequate spacing
+- Sections for choices and results with subtle backgrounds, rounded corners
+- A visually distinct Reset button with a hover effect
+Ensure the design looks modern, readable, and aligned with a developer aesthetic.
+*/
+body {
+  background: #0f172a;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #f1f5f9;
+}
+
+.game-container {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+h1 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.score-box {
+  background: #334155;
+  padding: 10px;
+  border-radius: 8px;
+  width: 70px;
+}
+
+.score-box h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.score-box p {
+  font-size: 24px;
+  margin: 5px 0 0;
+}
+
+.vs {
+  font-size: 18px;
+  color: #f87171;
+}
+
+#round {
+  margin: 10px 0;
+  background: #334155;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.choices button {
+  background: #475569;
+  color: #f1f5f9;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 80px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.choices button:hover {
+  background: #64748b;
+}
+
+.selections {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.selections div {
+  background: #334155;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100px;
+}
+
+.selections p {
+  margin: 5px 0;
+}
+
+#result {
+  background: #334155;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+#reset {
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#reset:hover {
+  background: #fb923c;
+}

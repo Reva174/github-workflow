@@ -1,0 +1,62 @@
+<!-- Create a minimal, modern HTML structure for a Rock Paper Scissors game with:
+- A centered container
+- Heading "Rock Paper Scissors"
+- Scoreboard showing "You" and "Computer" with scores initialized to 0
+- A display for the current round (e.g., "Round 1/5")
+- Three buttons for Rock, Paper, Scissors with emojis
+- Sections to display "Your choice" and "Computer's choice"
+- A result area for feedback (e.g., "Make your choice!" or win/lose messages)
+- A "Reset Game" button
+Do not include unnecessary boilerplate or comments.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="scoreboard">
+      <div class="score-box">
+        <h2>You</h2>
+        <p id="player-score">0</p>
+      </div>
+      <div class="vs">vs</div>
+      <div class="score-box">
+        <h2>Computer</h2>
+        <p id="computer-score">0</p>
+      </div>
+    </div>
+
+    <p id="round">Round 1/5</p>
+
+    <div class="choices">
+      <button id="rock">✊ Rock</button>
+      <button id="paper">✋ Paper</button>
+      <button id="scissors">✌️ Scissors</button>
+    </div>
+
+    <div class="selections">
+      <div>
+        <p>Your choice</p>
+        <p id="player-choice">?</p>
+      </div>
+      <div>
+        <p>Computer's choice</p>
+        <p id="computer-choice">?</p>
+      </div>
+    </div>
+
+    <p id="result">Make your choice!</p>
+
+    <button id="reset">🔄 Reset Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
